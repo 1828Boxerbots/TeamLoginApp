@@ -1,0 +1,13 @@
+C:\Users\Ryan Alterman\Desktop\TeamLoginApp\LoginApp\LoginApp\bin\Debug\LoginApp.exe.config
+C:\Users\Ryan Alterman\Desktop\TeamLoginApp\LoginApp\LoginApp\bin\Debug\LoginApp.exe
+C:\Users\Ryan Alterman\Desktop\TeamLoginApp\LoginApp\LoginApp\bin\Debug\LoginApp.pdb
+C:\Users\Ryan Alterman\Desktop\TeamLoginApp\LoginApp\LoginApp\bin\Debug\MessagingToolkit.Barcode.dll
+C:\Users\Ryan Alterman\Desktop\TeamLoginApp\LoginApp\LoginApp\obj\Debug\LoginApp.csprojAssemblyReference.cache
+C:\Users\Ryan Alterman\Desktop\TeamLoginApp\LoginApp\LoginApp\obj\Debug\LoginApp.Properties.Resources.resources
+C:\Users\Ryan Alterman\Desktop\TeamLoginApp\LoginApp\LoginApp\obj\Debug\LoginApp.csproj.GenerateResource.cache
+C:\Users\Ryan Alterman\Desktop\TeamLoginApp\LoginApp\LoginApp\obj\Debug\LoginApp.csproj.CoreCompileInputs.cache
+C:\Users\Ryan Alterman\Desktop\TeamLoginApp\LoginApp\LoginApp\obj\Debug\LoginApp.csproj.CopyComplete
+C:\Users\Ryan Alterman\Desktop\TeamLoginApp\LoginApp\LoginApp\obj\Debug\LoginApp.exe
+C:\Users\Ryan Alterman\Desktop\TeamLoginApp\LoginApp\LoginApp\obj\Debug\LoginApp.pdb
+C:\Users\Ryan Alterman\Desktop\TeamLoginApp\LoginApp\LoginApp\obj\Debug\LoginApp.LoginApplication.resources
+C:\Users\Ryan Alterman\Desktop\TeamLoginApp\LoginApp\LoginApp\obj\Debug\LoginApp.NewUserPopup.resources
