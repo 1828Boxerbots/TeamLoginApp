@@ -9,3 +9,5 @@ C:\Users\Ryan Alterman\Desktop\TeamLoginApp\LoginApp\LoginApp\obj\Debug\LoginApp
 C:\Users\Ryan Alterman\Desktop\TeamLoginApp\LoginApp\LoginApp\obj\Debug\LoginApp.csproj.CopyComplete
 C:\Users\Ryan Alterman\Desktop\TeamLoginApp\LoginApp\LoginApp\obj\Debug\LoginApp.exe
 C:\Users\Ryan Alterman\Desktop\TeamLoginApp\LoginApp\LoginApp\obj\Debug\LoginApp.pdb
+C:\Users\Ryan Alterman\Desktop\TeamLoginApp\LoginApp\LoginApp\obj\Debug\LoginApp.LoginApplication.resources
+C:\Users\Ryan Alterman\Desktop\TeamLoginApp\LoginApp\LoginApp\obj\Debug\LoginApp.NewUserPopup.resources

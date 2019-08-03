@@ -49,16 +49,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="LoginApplication.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="LoginApplication.Designer.cs">
+      <DependentUpon>LoginApplication.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="NewUserPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewUserPopup.Designer.cs">
+      <DependentUpon>NewUserPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="LoginApplication.resx">
+      <DependentUpon>LoginApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewUserPopup.resx">
+      <DependentUpon>NewUserPopup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
