@@ -19,6 +19,8 @@ namespace LoginApp
         public NewUserPopup()
         {
             InitializeComponent();
+            AdminLogin popup = new AdminLogin();
+            DialogResult dialogresult = popup.ShowDialog();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -39,18 +41,7 @@ namespace LoginApp
         //Button to Generate Barcodes off of user inputed data
         private void button1_Click(object sender, EventArgs e)
         {
-            string userInput = textBox1.Text + textBox2.Text;
 
-            BarcodeEncoder Generator;
-
-            Generator = new BarcodeEncoder();
-            Generator.IncludeLabel = true;
-            Generator.CustomLabel = userInput;
-
-            if(userInput != "")
-            {
-                pictureBox1.Image = new Bitmap(Generator.Encode(BarcodeFormat.Code128, userInput));
-            }
         }
 
         //Logic for printing the barcode page
@@ -93,6 +84,68 @@ namespace LoginApp
             {
                 pictureBox1.Image.Save(saveFileDialog1.FileName, System.Drawing.Imaging.ImageFormat.Jpeg);
             }
+        }
+
+        private void TextBox2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyData == Keys.Enter)
+            {
+                ProcessGenerate();
+            }
+        }
+
+        private void btnGen_Click(object sender, EventArgs e)
+        {
+            ProcessGenerate();
+        }
+
+        private void ProcessGenerate()
+        {
+            string userInput = txtFirstName.Text.Trim() + " "+ txtLastName.Text.Trim();
+            userInput = userInput.Trim();
+
+            BarcodeEncoder Generator;
+
+            Generator = new BarcodeEncoder();
+            Generator.IncludeLabel = true;
+            Generator.CustomLabel = userInput;
+
+            label4.Visible = true;
+            txtID.Visible = true;
+
+            if (userInput != "")
+            {
+                pictureBox1.Image = new Bitmap(Generator.Encode(BarcodeFormat.Code128, userInput));
+            }
+            else
+            {
+                pictureBox1.Image = null;
+                label4.Visible = false;
+                txtID.Visible = false;
+            }
+        }
+
+        private void TextBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyData == Keys.Enter)
+            {
+                ProcessGenerate();
+            }
+        }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox3_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
