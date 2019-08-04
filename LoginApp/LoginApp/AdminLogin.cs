@@ -60,11 +60,13 @@ namespace LoginApp
             }
         }
 
+        public static string value;
+
         private void Login()
         {
-            //getUser();
             if ((txtUser.Text == USER) && (txtPass.Text == PASSWORD))
             {
+                value = txtUser.Text;
                 this.Hide();
                 NewUserPopup popup = new NewUserPopup();
                 popup.ShowDialog();
