@@ -143,7 +143,14 @@ namespace LoginApp
 
         private void TextBox2_TextChanged(object sender, EventArgs e)
         {
-
+            if ((txtFirstName.Text != "") && (txtLastName.Text != ""))
+            {
+                btnGen.Enabled = true;
+            }
+            else
+            {
+                btnGen.Enabled = false;
+            }
         }
 
         private void TextBox3_TextChanged(object sender, EventArgs e)
@@ -153,12 +160,29 @@ namespace LoginApp
 
         private void NewUserPopup_Load(object sender, EventArgs e)
         {
-            
+            txtAdmin.Text = AdminLogin.value;
         }
 
         private void btnUpload_Click(object sender, EventArgs e)
         {
             //All code for exporting data to SQL server
+        }
+
+        private void lblTest_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtFirstName_TextChanged(object sender, EventArgs e)
+        {
+            if ((txtFirstName.Text != "") && (txtLastName.Text != ""))
+            {
+                btnGen.Enabled = true;
+            }
+            else
+            {
+                btnGen.Enabled = false;
+            }
         }
     }
 }
