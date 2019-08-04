@@ -25,7 +25,7 @@ namespace LoginApp
         //New User Dialog Code
         private void newUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            NewUserPopup popup = new NewUserPopup();
+            AdminLogin popup = new AdminLogin();
             DialogResult dialogresult = popup.ShowDialog();
         }
 
