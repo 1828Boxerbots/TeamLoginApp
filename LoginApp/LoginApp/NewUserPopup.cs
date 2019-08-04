@@ -14,13 +14,9 @@ namespace LoginApp
 {
     public partial class NewUserPopup : Form
     {
-        //private PrintDocument printDocument2 = new PrintDocument();
-
         public NewUserPopup()
         {
             InitializeComponent();
-            AdminLogin popup = new AdminLogin();
-            DialogResult dialogresult = popup.ShowDialog();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -110,18 +106,25 @@ namespace LoginApp
             Generator.IncludeLabel = true;
             Generator.CustomLabel = userInput;
 
+            const int ID = 1;
+
+            string genID = ID.ToString();
+
             label4.Visible = true;
             txtID.Visible = true;
+            txtID.Text = genID;
+            btnUpload.Visible = true;
 
             if (userInput != "")
             {
-                pictureBox1.Image = new Bitmap(Generator.Encode(BarcodeFormat.Code128, userInput));
+                pictureBox1.Image = new Bitmap(Generator.Encode(BarcodeFormat.Code128, genID));
             }
             else
             {
                 pictureBox1.Image = null;
                 label4.Visible = false;
                 txtID.Visible = false;
+                btnUpload.Visible = false;
             }
         }
 
@@ -146,6 +149,16 @@ namespace LoginApp
         private void TextBox3_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void NewUserPopup_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnUpload_Click(object sender, EventArgs e)
+        {
+            //All code for exporting data to SQL server
         }
     }
 }

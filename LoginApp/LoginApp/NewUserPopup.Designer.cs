@@ -52,7 +52,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.schoolDrop = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.classDrop = new System.Windows.Forms.ComboBox();
+            this.btnUpload = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -89,7 +90,8 @@
             // 
             this.btnGen.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnGen.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGen.Location = new System.Drawing.Point(179, 170);
+            this.btnGen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGen.Location = new System.Drawing.Point(179, 180);
             this.btnGen.Name = "btnGen";
             this.btnGen.Size = new System.Drawing.Size(146, 34);
             this.btnGen.TabIndex = 9;
@@ -195,7 +197,6 @@
             // 
             // txtAdmin
             // 
-            this.txtAdmin.Enabled = false;
             this.txtAdmin.Location = new System.Drawing.Point(140, 144);
             this.txtAdmin.Name = "txtAdmin";
             this.txtAdmin.Size = new System.Drawing.Size(233, 20);
@@ -250,7 +251,8 @@
             "Cienega High School",
             "Empire High School",
             "Vail Academy and High School",
-            "Vail Digital Learning"});
+            "Vail Digital Learning",
+            "Other"});
             this.schoolDrop.Location = new System.Drawing.Point(140, 90);
             this.schoolDrop.Name = "schoolDrop";
             this.schoolDrop.Size = new System.Drawing.Size(233, 21);
@@ -266,25 +268,40 @@
             this.label6.TabIndex = 17;
             this.label6.Text = "Class Of";
             // 
-            // comboBox1
+            // classDrop
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.classDrop.FormattingEnabled = true;
+            this.classDrop.Items.AddRange(new object[] {
             "2019",
             "2020",
             "2021",
             "2022"});
-            this.comboBox1.Location = new System.Drawing.Point(140, 117);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(233, 21);
-            this.comboBox1.TabIndex = 18;
+            this.classDrop.Location = new System.Drawing.Point(140, 117);
+            this.classDrop.Name = "classDrop";
+            this.classDrop.Size = new System.Drawing.Size(233, 21);
+            this.classDrop.TabIndex = 18;
+            // 
+            // btnUpload
+            // 
+            this.btnUpload.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnUpload.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpload.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpload.Location = new System.Drawing.Point(411, 218);
+            this.btnUpload.Name = "btnUpload";
+            this.btnUpload.Size = new System.Drawing.Size(146, 34);
+            this.btnUpload.TabIndex = 19;
+            this.btnUpload.Text = "Upload";
+            this.btnUpload.UseVisualStyleBackColor = false;
+            this.btnUpload.Visible = false;
+            this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
             // 
             // NewUserPopup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.btnUpload);
+            this.Controls.Add(this.classDrop);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.schoolDrop);
             this.Controls.Add(this.label5);
@@ -302,6 +319,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "NewUserPopup";
             this.Text = "NewUserPopup";
+            this.Load += new System.EventHandler(this.NewUserPopup_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -336,6 +354,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox schoolDrop;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox classDrop;
+        private System.Windows.Forms.Button btnUpload;
     }
 }
